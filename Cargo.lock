@@ -192,6 +192,7 @@ dependencies = [
  "tree-sitter-bash",
  "tree-sitter-c",
  "tree-sitter-c-sharp",
+ "tree-sitter-cmake",
  "tree-sitter-cpp",
  "tree-sitter-css",
  "tree-sitter-dart",
@@ -965,7 +966,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4979f22fdb869068da03c9f7528f8297c6fd2606bc3a4affe42e6a823fdb8da4"
 dependencies = [
  "cfg-if",
- "windows-targets 0.48.5",
+ "windows-targets 0.52.6",
 ]
 
 [[package]]
@@ -1905,6 +1906,16 @@ name = "tree-sitter-c-sharp"
 version = "0.21.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8997ad04502208449025114e434c9024a33a74e700513c702a9d2cac6522a771"
+dependencies = [
+ "cc",
+ "tree-sitter",
+]
+
+[[package]]
+name = "tree-sitter-cmake"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b0babbbb90d5c231f16556625b97241adebb318eef9cce969f3b9d90ad613427"
 dependencies = [
  "cc",
  "tree-sitter",
